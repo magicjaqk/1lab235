@@ -6,4 +6,19 @@ Archer::Archer(string name, int hp, int strength, int speed, int magic){
 }
 
 //Accessors
-Archer::get
+Archer::getMagic(){
+
+}
+
+Archer::getDamage(){
+
+}
+
+//Mutators
+Archer::regenerate(){
+
+}
+
+Archer::useAbility(){
+  
+}

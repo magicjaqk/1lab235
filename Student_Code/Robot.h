@@ -3,7 +3,7 @@ using namespace std;
 
 class Robot : public Fighter {
 public:
-    //Contructor
+    //Constructor
     Robot(string name, int hp, int strength, int speed, int magic, int energy);
 
     //Accessors

@@ -3,7 +3,7 @@ using namespace std;
 
 class Fighter : public Fighterinterface {
 public:
-    //Contructor
+    //Constructor
     Fighter(string name, int hp, int strength, int speed, int magic);
 
     //Accessors

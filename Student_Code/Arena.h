@@ -3,11 +3,11 @@ using namespace std;
 
 class Arena : public Arenainterface {
 public:
-    //Contructor
+    //Constructor
     Arena();
 
     //Accessors
-    Fighterinterface* getFighter(string name);
+    static Fighterinterface* getFighter(string name);
 
     int getSize() const;
 
