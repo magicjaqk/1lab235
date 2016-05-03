@@ -1,4 +1,6 @@
 #include "Arenainterface.h"
+#include "Fighterinterface.h"
+#include <fstream>
 using namespace std;
 
 class Arena : public Arenainterface {
