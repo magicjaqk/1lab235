@@ -1,4 +1,5 @@
 #include "Fighter.h"
+#pragma once
 using namespace std;
 
 class Robot : public Fighter {

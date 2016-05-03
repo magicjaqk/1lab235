@@ -1,4 +1,5 @@
 #include "ArenaInterface.h"
+#pragma once
 using namespace std;
 
 /*
