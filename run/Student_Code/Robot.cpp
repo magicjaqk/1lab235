@@ -3,20 +3,20 @@
 using namespace std;
 
 //Accessors
-Robot::getDamage(){
+int Robot::getDamage(){
   int temp = addDamage;
   addDamage = 0;
   return strength + temp;
 }
 
 //Mutators
-Robot::reset(){
+void Robot::reset(){
   Fighter::reset();
   energy = maxEnergy;
   addDamage = 0;
 }
 
-Robot::useAbility(){
+bool Robot::useAbility(){
   if (energy >= ROBOT_ABILITY_COST){
     double temp = energy / maxEnergy;
     temp = pow(temp, 4);

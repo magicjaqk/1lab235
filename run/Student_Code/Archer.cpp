@@ -2,12 +2,12 @@
 using namespace std;
 
 //Mutators
-Archer::reset(){
+void Archer::reset(){
   Fighter::reset();
   speed = origspeed;
 }
 
-Archer::useAbility(){
+bool Archer::useAbility(){
   int inc = 1;
   speed += inc;
 }

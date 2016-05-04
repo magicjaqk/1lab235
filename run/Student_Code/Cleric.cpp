@@ -2,12 +2,12 @@
 using namespace std;
 
 //Mutators
-Cleric::reset(){
+void Cleric::reset(){
   Fighter::reset();
   mana = maxmana;
 }
 
-Cleric::regenerate(){
+void Cleric::regenerate(){
   Fighter::regenerate();
   const int inc = 1/5;
   newmana = (inc * mana);
@@ -26,7 +26,7 @@ Cleric::regenerate(){
   mana += newmana;
 }
 
-Cleric::useAbility(){
+bool Cleric::useAbility(){
   const int inc = 1/3;
   int inchp = inc * magic;
   if (inchp < 1){

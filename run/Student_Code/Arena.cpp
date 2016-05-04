@@ -15,12 +15,12 @@ Fighterinterface* Arena::getFighter(string name){
  return NULL;
 }
 
-Arena::getSize(){
+int Arena::getSize(){
  return fighters.size();
 }
 
 /**Mutators*/
-Arena::addFighter(string info){
+bool Arena::addFighter(string info){
   string name, type;
   int hp, strength, speed, magic, energy, mana;
   stringstream ss << info;
@@ -38,7 +38,7 @@ Arena::addFighter(string info){
 
 }
 
-Arena::removeFighter(){
+bool Arena::removeFighter(){
   for (int i = 0; i < fighters.size(); i++){
     if (fighters[i]->getname() == name){
       return true;
