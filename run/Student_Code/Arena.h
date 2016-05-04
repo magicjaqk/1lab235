@@ -1,10 +1,10 @@
-#include "Arenainterface.h"
-#include "Fighterinterface.h"
+#include "ArenaInterface.h"
+#include "FighterInterface.h"
 #include <fstream>
 #pragma once
 using namespace std;
 
-class Arena : public Arenainterface {
+class Arena : public ArenaInterface {
 public:
     //Constructor
   public:
@@ -56,4 +56,4 @@ public:
 
 private:
     vector<Fighter*> fighters;
-}
+};

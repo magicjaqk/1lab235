@@ -37,5 +37,7 @@ Cleric::useAbility(){
       hp += inchp;
     }
     mana -= CLERIC_ABILITY_COST;
+    return true;
   }
+  else {return false;}
 }

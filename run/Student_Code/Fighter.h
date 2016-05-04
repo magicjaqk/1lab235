@@ -1,8 +1,8 @@
-#include "Fighterinterface.h"
+#include "FighterInterface.h"
 #pragma once
 using namespace std;
 
-class Fighter : public Fighterinterface {
+class Fighter : public FighterInterface {
 public:
   Fighter(string name_in, int hp_in, int strength_in, int speed_in, int magic_in){
     name = name_in;
@@ -161,4 +161,4 @@ public:
 protected:
   string name;
   int hp, strength, speed, magic, maxhp;
-}
+};
