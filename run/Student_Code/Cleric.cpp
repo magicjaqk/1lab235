@@ -10,7 +10,7 @@ void Cleric::reset(){
 void Cleric::regenerate(){
   Fighter::regenerate();
   const int inc = 1/5;
-  newmana = (inc * mana);
+  int newmana = (inc * mana);
   if (newmana == 0){
     newmana = 1;
     mana += newmana;

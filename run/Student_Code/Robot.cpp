@@ -24,5 +24,5 @@ bool Robot::useAbility(){
     addDamage = temp;
     return true;
   }
-  else (return false;)
+  else {return false;}
 }

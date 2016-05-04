@@ -1,12 +1,13 @@
 #include "ArenaInterface.h"
-#include "FighterInterface.h"
-#include <fstream>
+#include "Robot.h"
+#include "Archer.h"
+#include "Cleric.h"
+#include <sstream>
 #pragma once
 using namespace std;
 
 class Arena : public ArenaInterface {
-public:
-    //Constructor
+
   public:
     Arena(){}
     ~Arena(){}
@@ -20,7 +21,7 @@ public:
          *
          *	Return a memory address if a fighter is found; NULL otherwise.
          */
-      static FighterInterface* getFighter(string name);
+        FighterInterface* getFighter(string name);
 
         /**
          *	getSize()

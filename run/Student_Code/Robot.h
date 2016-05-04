@@ -27,7 +27,7 @@ public:
     bool useAbility();
 
 private:
-    int energy
+    int energy;
     double maxEnergy;
     int addDamage;
 };

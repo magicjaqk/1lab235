@@ -13,7 +13,7 @@ void Fighter::reset(){
 
 void Fighter::regenerate(){
   const int inc = 1/6;
-  newhp = (inc * strength);
+  int newhp = (inc * strength);
   if (newhp == 0){
     newhp = 1;
     hp += newhp;
