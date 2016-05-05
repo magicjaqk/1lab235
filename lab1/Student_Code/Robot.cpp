@@ -18,14 +18,11 @@ void Robot::reset(){
 }
 
 bool Robot::useAbility(){
-  cout << "before if " << energy << " " << strength << endl;
   if (energy >= ROBOT_ABILITY_COST){
     double temp = (double) energy / maxEnergy;
-    cout << "temp " << temp << endl;
     temp = pow(temp, 4);
     temp = temp * strength;
     addDamage = temp;
-    cout << energy << endl;
     energy -= ROBOT_ABILITY_COST;
     return true;
   }
