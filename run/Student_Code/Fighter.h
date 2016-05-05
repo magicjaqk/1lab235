@@ -12,7 +12,7 @@ public:
     speed = speed_in;
     magic = magic_in;
   }
-  ~Fighter(){};
+  ~Fighter(){}
 
   /*
    *	getName()

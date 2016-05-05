@@ -9,8 +9,7 @@ void Cleric::reset(){
 
 void Cleric::regenerate(){
   Fighter::regenerate();
-  const int inc = 1/5;
-  int newmana = (inc * mana);
+  int newmana = mana / 5;
   if (newmana == 0){
     newmana = 1;
     mana += newmana;
@@ -27,8 +26,7 @@ void Cleric::regenerate(){
 }
 
 bool Cleric::useAbility(){
-  const int inc = 1/3;
-  int inchp = inc * magic;
+  int inchp = magic/3;
   if (inchp < 1){
     inchp = 1;
   }

@@ -3,8 +3,12 @@ using namespace std;
 
 /** Mutators */
 void Fighter::takeDamage(int damage){
-  const int decspeed = 1/4;
-  hp -= damage - (decspeed * speed);
+  double decspeed = (speed/4);
+  double dechp = damage - decspeed;
+  if (dechp == 0){
+    dechp = 1;
+  }
+  hp = hp - dechp;
 }
 
 void Fighter::reset(){
@@ -12,18 +16,17 @@ void Fighter::reset(){
 }
 
 void Fighter::regenerate(){
-  const int inc = 1/6;
-  int newhp = (inc * strength);
-  if (newhp == 0){
-    newhp = 1;
-    hp += newhp;
-    return;
-  }
-  else if (hp == maxhp){
+  int newhp = strength / 6;
+  if (hp == maxhp){
     return;
   }
   else if ((hp + newhp) > maxhp){
     reset();
+    return;
+  }
+  else if (newhp == 0){
+    newhp = 1;
+    hp += newhp;
     return;
   }
   hp += newhp;

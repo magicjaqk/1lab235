@@ -10,4 +10,5 @@ void Archer::reset(){
 bool Archer::useAbility(){
   int inc = 1;
   speed += inc;
+  return true;
 }
