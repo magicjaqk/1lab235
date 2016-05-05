@@ -7,8 +7,9 @@ public:
     //Constructor
     Robot(string name_in, int hp_in, int strength_in, int speed_in, int magic_in):
     Fighter(name_in, hp_in, strength_in, speed_in, magic_in){
-      energy = 5 * magic;
+      energy = 2s * magic;
       maxEnergy = energy;
+      addDamage = 0;
     }
     ~Robot(){}
     //Accessors
